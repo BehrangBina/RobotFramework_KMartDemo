@@ -5,9 +5,9 @@ Resource                  ../Locators/webelements.robot
 *** Keywords ***
 Guest User Types First Name
     Input Text   ${txt_firstname}   ${FIRST_NAME}
-Guest User Tpes Last Name
+Guest User Types Last Name
     Input Text   ${txt_lastname}   ${LAST_NAME}
-Guest USer Input Email
+Guest User Input Email
     Input Text   ${txt_email}   ${EMAIL}
 
 Guest User Verifies Order Summary

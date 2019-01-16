@@ -15,16 +15,16 @@ Search Product and Add to bag as a guest
     User Navigates To Homepage
     User Inputs Query into Search
     User Clicks on Search Button
-    User Clsoes The KMail Pop-up
+    User Closes The KMail Pop-up
     Select a Product
-    User Selects Quanity
+    User Selects Quantity
     User Adds product to the cart
     Guest User Proceeds to Checkout
     Guest User Types First Name
-    Guest User Tpes Last Name
-    Guest USer Input Email
+    Guest User Types Last Name
+    Guest User Input Email
     Guest User Verifies Order Summary
 
-
-    Sleep  2s
-    #Close Browser
+[Test Teardown]
+    sleep  2s
+    Close Browser

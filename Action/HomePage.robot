@@ -13,7 +13,7 @@ User Inputs Query into Search
     Input Text      ${txt_search}       ${SEARCH_QUERY}
 User Clicks on Search Button
     Click Element   ${btn_search}
-User Clsoes The KMail Pop-up
+User Closes The KMail Pop-up
     ${showed}   Is Element Visible  ${btn_kmail_close}     
     Run Keyword If  ${showed}  Click Element  ${btn_kmail_close}
     Capture Page Screenshot   searched_product.png

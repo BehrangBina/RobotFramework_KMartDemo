@@ -5,7 +5,7 @@ Resource                  ../Locators/webelements.robot
 
 
 *** Keywords ***
-User Selects Quanity
+User Selects Quantity
     Click Element   ${quantity_dropdown} 
     # (//ul/li[contains(@class, '_msddli_')]/span)[ ]
     ${quantity}             Convert To Integer   ${QUANTITY}
