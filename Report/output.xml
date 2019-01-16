@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190116 15:57:48.500" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\ben.bina\OneDrive - AVOCADO CONSULTING SERVICES PTY LTD\Technical Documentation\RobotFrameWork Demo\Demo-WebBase\testcases\shopping.robot" id="s1" name="Shopping">
+<test id="s1-t1" name="Search Product and Add to bag as a guest">
+<kw name="Convert Data From File" library="Excel_Adaptor">
+<kw name="Init Variables" library="Excel_Adaptor">
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${empty}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.229" level="INFO">${URL} = </msg>
+<status status="PASS" endtime="20190116 15:57:49.229" starttime="20190116 15:57:49.226"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${SEARCH_QUERY}</arg>
+<arg>${empty}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.231" level="INFO">${SEARCH_QUERY} = </msg>
+<status status="PASS" endtime="20190116 15:57:49.232" starttime="20190116 15:57:49.230"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${QUANTITY}</arg>
+<arg>${empty}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.233" level="INFO">${QUANTITY} = </msg>
+<status status="PASS" endtime="20190116 15:57:49.233" starttime="20190116 15:57:49.232"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${empty}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.234" level="INFO">${PRODUCT_NAME} = </msg>
+<status status="PASS" endtime="20190116 15:57:49.235" starttime="20190116 15:57:49.233"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>${empty}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.236" level="INFO">${FIRST_NAME} = </msg>
+<status status="PASS" endtime="20190116 15:57:49.236" starttime="20190116 15:57:49.235"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${LAST_NAME}</arg>
+<arg>${empty}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.238" level="INFO">${LAST_NAME} = </msg>
+<status status="PASS" endtime="20190116 15:57:49.238" starttime="20190116 15:57:49.237"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${EMAIL}</arg>
+<arg>${empty}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.239" level="INFO">${EMAIL} = </msg>
+<status status="PASS" endtime="20190116 15:57:49.239" starttime="20190116 15:57:49.238"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.239" starttime="20190116 15:57:49.225"></status>
+</kw>
+<kw name="Get Excel Enteries" library="Excel_Adaptor">
+<assign>
+<var>${v}</var>
+</assign>
+<kw name="Create Dictionary" library="BuiltIn">
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<assign>
+<var>${my_dict}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.240" level="INFO">${my_dict} = {}</msg>
+<status status="PASS" endtime="20190116 15:57:49.240" starttime="20190116 15:57:49.240"></status>
+</kw>
+<kw name="Open Excel" library="ExcelLibrary">
+<doc>Opens the Excel file from the path provided in the file name parameter.</doc>
+<arguments>
+<arg>kmart.xls</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:57:49.253" starttime="20190116 15:57:49.240"></status>
+</kw>
+<kw name="Get Row Count" library="ExcelLibrary">
+<doc>Returns the specific number of rows of the sheet name specified.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+</arguments>
+<assign>
+<var>${rowCount}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.254" level="INFO">${rowCount} = 9</msg>
+<status status="PASS" endtime="20190116 15:57:49.254" starttime="20190116 15:57:49.253"></status>
+</kw>
+<kw name="Get Column Count" library="ExcelLibrary">
+<doc>Returns the specific number of columns of the sheet name specified.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+</arguments>
+<assign>
+<var>${columnCount}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.255" level="INFO">${columnCount} = 2</msg>
+<status status="PASS" endtime="20190116 15:57:49.255" starttime="20190116 15:57:49.255"></status>
+</kw>
+<kw type="for" name="${i} IN RANGE [ 2 | ${rowCount} ]">
+<kw type="foritem" name="${i} = 2">
+<kw name="Get Row Values" library="ExcelLibrary">
+<doc>Returns the specific row values of the sheet name specified.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${v}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.257" level="INFO">${v} = [('A3', u'URL'), ('B3', u'https://www.kmart.com.au/')]</msg>
+<status status="PASS" endtime="20190116 15:57:49.257" starttime="20190116 15:57:49.256"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${0}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${key}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.258" level="INFO">${key} = URL</msg>
+<status status="PASS" endtime="20190116 15:57:49.258" starttime="20190116 15:57:49.258"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${1}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.259" level="INFO">${value} = https://www.kmart.com.au/</msg>
+<status status="PASS" endtime="20190116 15:57:49.259" starttime="20190116 15:57:49.258"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${my_dict}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:57:49.260" starttime="20190116 15:57:49.259"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.260" starttime="20190116 15:57:49.256"></status>
+</kw>
+<kw type="foritem" name="${i} = 3">
+<kw name="Get Row Values" library="ExcelLibrary">
+<doc>Returns the specific row values of the sheet name specified.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${v}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.262" level="INFO">${v} = [('A4', u'SEARCH_QUERY'), ('B4', u'iphone x case')]</msg>
+<status status="PASS" endtime="20190116 15:57:49.262" starttime="20190116 15:57:49.260"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${0}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${key}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.263" level="INFO">${key} = SEARCH_QUERY</msg>
+<status status="PASS" endtime="20190116 15:57:49.263" starttime="20190116 15:57:49.262"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${1}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.265" level="INFO">${value} = iphone x case</msg>
+<status status="PASS" endtime="20190116 15:57:49.265" starttime="20190116 15:57:49.264"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${my_dict}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:57:49.265" starttime="20190116 15:57:49.265"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.266" starttime="20190116 15:57:49.260"></status>
+</kw>
+<kw type="foritem" name="${i} = 4">
+<kw name="Get Row Values" library="ExcelLibrary">
+<doc>Returns the specific row values of the sheet name specified.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${v}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.268" level="INFO">${v} = [('A5', u'QUANTITY'), ('B5', 3.0)]</msg>
+<status status="PASS" endtime="20190116 15:57:49.268" starttime="20190116 15:57:49.266"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${0}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${key}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.270" level="INFO">${key} = QUANTITY</msg>
+<status status="PASS" endtime="20190116 15:57:49.270" starttime="20190116 15:57:49.268"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${1}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.272" level="INFO">${value} = 3.0</msg>
+<status status="PASS" endtime="20190116 15:57:49.272" starttime="20190116 15:57:49.271"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${my_dict}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:57:49.273" starttime="20190116 15:57:49.272"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.273" starttime="20190116 15:57:49.266"></status>
+</kw>
+<kw type="foritem" name="${i} = 5">
+<kw name="Get Row Values" library="ExcelLibrary">
+<doc>Returns the specific row values of the sheet name specified.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${v}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.274" level="INFO">${v} = [('A6', u'PRODUCT_NAME'), ('B6', u'iPhone X Phone Guard')]</msg>
+<status status="PASS" endtime="20190116 15:57:49.274" starttime="20190116 15:57:49.273"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${0}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${key}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.275" level="INFO">${key} = PRODUCT_NAME</msg>
+<status status="PASS" endtime="20190116 15:57:49.275" starttime="20190116 15:57:49.275"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${1}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.276" level="INFO">${value} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190116 15:57:49.276" starttime="20190116 15:57:49.275"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${my_dict}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:57:49.279" starttime="20190116 15:57:49.277"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.280" starttime="20190116 15:57:49.273"></status>
+</kw>
+<kw type="foritem" name="${i} = 6">
+<kw name="Get Row Values" library="ExcelLibrary">
+<doc>Returns the specific row values of the sheet name specified.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${v}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.281" level="INFO">${v} = [('A7', u'FIRST_NAME'), ('B7', u'KMART')]</msg>
+<status status="PASS" endtime="20190116 15:57:49.281" starttime="20190116 15:57:49.280"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${0}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${key}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.282" level="INFO">${key} = FIRST_NAME</msg>
+<status status="PASS" endtime="20190116 15:57:49.282" starttime="20190116 15:57:49.281"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${1}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.283" level="INFO">${value} = KMART</msg>
+<status status="PASS" endtime="20190116 15:57:49.283" starttime="20190116 15:57:49.282"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${my_dict}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:57:49.284" starttime="20190116 15:57:49.283"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.284" starttime="20190116 15:57:49.280"></status>
+</kw>
+<kw type="foritem" name="${i} = 7">
+<kw name="Get Row Values" library="ExcelLibrary">
+<doc>Returns the specific row values of the sheet name specified.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${v}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.288" level="INFO">${v} = [('A8', u'LAST_NAME'), ('B8', u'TESTER')]</msg>
+<status status="PASS" endtime="20190116 15:57:49.288" starttime="20190116 15:57:49.284"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${0}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${key}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.289" level="INFO">${key} = LAST_NAME</msg>
+<status status="PASS" endtime="20190116 15:57:49.289" starttime="20190116 15:57:49.288"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${1}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.290" level="INFO">${value} = TESTER</msg>
+<status status="PASS" endtime="20190116 15:57:49.290" starttime="20190116 15:57:49.289"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${my_dict}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:57:49.291" starttime="20190116 15:57:49.290"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.291" starttime="20190116 15:57:49.284"></status>
+</kw>
+<kw type="foritem" name="${i} = 8">
+<kw name="Get Row Values" library="ExcelLibrary">
+<doc>Returns the specific row values of the sheet name specified.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${v}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.292" level="INFO">${v} = [('A9', u'EMAIL'), ('B9', u'K.Tester@Kmart.com')]</msg>
+<status status="PASS" endtime="20190116 15:57:49.292" starttime="20190116 15:57:49.291"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${0}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${key}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.293" level="INFO">${key} = EMAIL</msg>
+<status status="PASS" endtime="20190116 15:57:49.293" starttime="20190116 15:57:49.292"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>${sheetName}</arg>
+<arg>${1}</arg>
+<arg>${i}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.293" level="INFO">${value} = K.Tester@Kmart.com</msg>
+<status status="PASS" endtime="20190116 15:57:49.293" starttime="20190116 15:57:49.293"></status>
+</kw>
+<kw name="Set To Dictionary" library="Collections">
+<doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
+<arguments>
+<arg>${my_dict}</arg>
+<arg>${key}</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:57:49.294" starttime="20190116 15:57:49.293"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.294" starttime="20190116 15:57:49.291"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.294" starttime="20190116 15:57:49.256"></status>
+</kw>
+<msg timestamp="20190116 15:57:49.294" level="INFO">${v} = {u'URL': u'https://www.kmart.com.au/', u'SEARCH_QUERY': u'iphone x case', u'QUANTITY': 3.0, u'PRODUCT_NAME': u'iPhone X Phone Guard', u'FIRST_NAME': u'KMART', u'LAST_NAME': u'TESTER', u'EMAIL': u'K.Te...</msg>
+<status status="PASS" endtime="20190116 15:57:49.294" starttime="20190116 15:57:49.239"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${v}</arg>
+<arg>URL</arg>
+</arguments>
+<assign>
+<var>${tmp}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.294" level="INFO">${tmp} = https://www.kmart.com.au/</msg>
+<status status="PASS" endtime="20190116 15:57:49.294" starttime="20190116 15:57:49.294"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${tmp}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.295" level="INFO">${URL} = https://www.kmart.com.au/</msg>
+<status status="PASS" endtime="20190116 15:57:49.295" starttime="20190116 15:57:49.295"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${v}</arg>
+<arg>SEARCH_QUERY</arg>
+</arguments>
+<assign>
+<var>${tmp}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.295" level="INFO">${tmp} = iphone x case</msg>
+<status status="PASS" endtime="20190116 15:57:49.296" starttime="20190116 15:57:49.295"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${SEARCH_QUERY}</arg>
+<arg>${tmp}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.296" level="INFO">${SEARCH_QUERY} = iphone x case</msg>
+<status status="PASS" endtime="20190116 15:57:49.296" starttime="20190116 15:57:49.296"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${v}</arg>
+<arg>QUANTITY</arg>
+</arguments>
+<assign>
+<var>${tmp}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.297" level="INFO">${tmp} = 3.0</msg>
+<status status="PASS" endtime="20190116 15:57:49.297" starttime="20190116 15:57:49.296"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${QUANTITY}</arg>
+<arg>${tmp}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.298" level="INFO">${QUANTITY} = 3.0</msg>
+<status status="PASS" endtime="20190116 15:57:49.298" starttime="20190116 15:57:49.297"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${v}</arg>
+<arg>PRODUCT_NAME</arg>
+</arguments>
+<assign>
+<var>${tmp}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.298" level="INFO">${tmp} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190116 15:57:49.298" starttime="20190116 15:57:49.298"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${tmp}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.299" level="INFO">${PRODUCT_NAME} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190116 15:57:49.299" starttime="20190116 15:57:49.298"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${v}</arg>
+<arg>PRODUCT_NAME</arg>
+</arguments>
+<assign>
+<var>${tmp}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.299" level="INFO">${tmp} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190116 15:57:49.299" starttime="20190116 15:57:49.299"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${PRODUCT_NAME}</arg>
+<arg>${tmp}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.300" level="INFO">${PRODUCT_NAME} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190116 15:57:49.300" starttime="20190116 15:57:49.299"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${v}</arg>
+<arg>FIRST_NAME</arg>
+</arguments>
+<assign>
+<var>${tmp}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.300" level="INFO">${tmp} = KMART</msg>
+<status status="PASS" endtime="20190116 15:57:49.300" starttime="20190116 15:57:49.300"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${FIRST_NAME}</arg>
+<arg>${tmp}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.301" level="INFO">${FIRST_NAME} = KMART</msg>
+<status status="PASS" endtime="20190116 15:57:49.301" starttime="20190116 15:57:49.300"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${v}</arg>
+<arg>LAST_NAME</arg>
+</arguments>
+<assign>
+<var>${tmp}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.302" level="INFO">${tmp} = TESTER</msg>
+<status status="PASS" endtime="20190116 15:57:49.302" starttime="20190116 15:57:49.302"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${LAST_NAME}</arg>
+<arg>${tmp}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.303" level="INFO">${LAST_NAME} = TESTER</msg>
+<status status="PASS" endtime="20190116 15:57:49.303" starttime="20190116 15:57:49.303"></status>
+</kw>
+<kw name="Get From Dictionary" library="Collections">
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<arguments>
+<arg>${v}</arg>
+<arg>EMAIL</arg>
+</arguments>
+<assign>
+<var>${tmp}</var>
+</assign>
+<msg timestamp="20190116 15:57:49.305" level="INFO">${tmp} = K.Tester@Kmart.com</msg>
+<status status="PASS" endtime="20190116 15:57:49.305" starttime="20190116 15:57:49.304"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${EMAIL}</arg>
+<arg>${tmp}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.307" level="INFO">${EMAIL} = K.Tester@Kmart.com</msg>
+<status status="PASS" endtime="20190116 15:57:49.307" starttime="20190116 15:57:49.306"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:49.307" starttime="20190116 15:57:49.224"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>'Searching Product and Add to bag as a guest...'</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:57:49.310" starttime="20190116 15:57:49.309"></status>
+</kw>
+<kw name="User Navigates To Homepage" library="HomePage">
+<kw name="Open Browser" library="ExtendedSelenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190116 15:57:49.312" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20190116 15:57:53.858" starttime="20190116 15:57:49.312"></status>
+</kw>
+<kw name="Maximize Browser Window" library="ExtendedSelenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190116 15:57:55.037" starttime="20190116 15:57:53.858"></status>
+</kw>
+<kw name="Go To" library="ExtendedSelenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:55.038" level="INFO">Opening url 'https://www.kmart.com.au/'</msg>
+<status status="PASS" endtime="20190116 15:57:59.510" starttime="20190116 15:57:55.038"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:59.510" starttime="20190116 15:57:49.311"></status>
+</kw>
+<kw name="User Inputs Query into Search" library="HomePage">
+<kw name="Input Text" library="ExtendedSelenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_search}</arg>
+<arg>${SEARCH_QUERY}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:59.511" level="INFO">Typing text 'iphone x case' into text field 'name=searchTerm'</msg>
+<status status="PASS" endtime="20190116 15:57:59.892" starttime="20190116 15:57:59.511"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:57:59.892" starttime="20190116 15:57:59.511"></status>
+</kw>
+<kw name="User Clicks on Search Button" library="HomePage">
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_search}</arg>
+</arguments>
+<msg timestamp="20190116 15:57:59.894" level="INFO">Clicking element 'id=search_submit'.</msg>
+<status status="PASS" endtime="20190116 15:58:07.048" starttime="20190116 15:57:59.894"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:07.048" starttime="20190116 15:57:59.893"></status>
+</kw>
+<kw name="User Clsoes The KMail Pop-up" library="HomePage">
+<kw name="Is Element Visible" library="ExtendedSelenium2Library">
+<doc>Returns element visibility identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_kmail_close}</arg>
+</arguments>
+<assign>
+<var>${showed}</var>
+</assign>
+<msg timestamp="20190116 15:58:07.097" level="INFO">${showed} = True</msg>
+<status status="PASS" endtime="20190116 15:58:07.097" starttime="20190116 15:58:07.055"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>${showed}</arg>
+<arg>Click Element</arg>
+<arg>${btn_kmail_close}</arg>
+</arguments>
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_kmail_close}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:07.099" level="INFO">Clicking element 'xpath=//*[@id="KmailSignupDisplay"]//a'.</msg>
+<status status="PASS" endtime="20190116 15:58:07.707" starttime="20190116 15:58:07.098"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:07.707" starttime="20190116 15:58:07.097"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>searched_product.png</arg>
+</arguments>
+<msg timestamp="20190116 15:58:08.045" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="searched_product.png"&gt;&lt;img src="searched_product.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190116 15:58:08.045" starttime="20190116 15:58:07.707"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:08.045" starttime="20190116 15:58:07.055"></status>
+</kw>
+<kw name="Select a Product" library="HomePage">
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>//*[@class="title" and text()='${PRODUCT_NAME}']</arg>
+</arguments>
+<assign>
+<var>${pruductXpath}</var>
+</assign>
+<msg timestamp="20190116 15:58:08.048" level="INFO">${pruductXpath} = //*[@class="title" and text()='iPhone X Phone Guard']</msg>
+<status status="PASS" endtime="20190116 15:58:08.048" starttime="20190116 15:58:08.047"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>Product Xpath:</arg>
+<arg>${pruductXpath}</arg>
+</arguments>
+<assign>
+<var>${msg}</var>
+</assign>
+<msg timestamp="20190116 15:58:08.049" level="INFO">${msg} = Product Xpath: //*[@class="title" and text()='iPhone X Phone Guard']</msg>
+<status status="PASS" endtime="20190116 15:58:08.049" starttime="20190116 15:58:08.048"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${msg}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:08.049" level="INFO">Product Xpath: //*[@class="title" and text()='iPhone X Phone Guard']</msg>
+<status status="PASS" endtime="20190116 15:58:08.049" starttime="20190116 15:58:08.049"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${msg}</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:58:08.050" starttime="20190116 15:58:08.049"></status>
+</kw>
+<kw name="Scroll Element Into View" library="ExtendedSelenium2Library">
+<doc>Scrolls an element from given ``locator`` into view.</doc>
+<arguments>
+<arg>${productGrid}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:08.051" level="INFO">Scrolling element 'xpath=//*[@class='grid_mode']' into view.</msg>
+<status status="PASS" endtime="20190116 15:58:08.092" starttime="20190116 15:58:08.050"></status>
+</kw>
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${pruductXpath}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:08.092" level="INFO">Clicking element 'xpath=//*[@class="title" and text()='iPhone X Phone Guard']'.</msg>
+<status status="PASS" endtime="20190116 15:58:12.505" starttime="20190116 15:58:08.092"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20190116 15:58:13.505" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20190116 15:58:13.505" starttime="20190116 15:58:12.505"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>Selected_Product.png</arg>
+</arguments>
+<msg timestamp="20190116 15:58:13.855" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Selected_Product.png"&gt;&lt;img src="Selected_Product.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190116 15:58:13.856" starttime="20190116 15:58:13.505"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:13.856" starttime="20190116 15:58:08.047"></status>
+</kw>
+<kw name="User Selects Quanity" library="ProductPage">
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>${quantity_dropdown}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:13.858" level="INFO">Clicking element 'id=quantity_1897969_QtyDropDown_title'.</msg>
+<status status="PASS" endtime="20190116 15:58:14.569" starttime="20190116 15:58:13.857"></status>
+</kw>
+<kw name="Convert To Integer" library="BuiltIn">
+<doc>Converts the given item to an integer number.</doc>
+<arguments>
+<arg>${QUANTITY}</arg>
+</arguments>
+<assign>
+<var>${quantity}</var>
+</assign>
+<msg timestamp="20190116 15:58:14.570" level="INFO">${quantity} = 3</msg>
+<status status="PASS" endtime="20190116 15:58:14.570" starttime="20190116 15:58:14.569"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>(//ul/li[contains(@class, '_msddli_')]/span)[${quantity}]</arg>
+</arguments>
+<assign>
+<var>${quantityXpath}</var>
+</assign>
+<msg timestamp="20190116 15:58:14.571" level="INFO">${quantityXpath} = (//ul/li[contains(@class, '_msddli_')]/span)[3]</msg>
+<status status="PASS" endtime="20190116 15:58:14.571" starttime="20190116 15:58:14.570"></status>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<arguments>
+<arg>Quantity Xpath:</arg>
+<arg>${quantityXpath}</arg>
+</arguments>
+<assign>
+<var>${msg}</var>
+</assign>
+<msg timestamp="20190116 15:58:14.571" level="INFO">${msg} = Quantity Xpath: (//ul/li[contains(@class, '_msddli_')]/span)[3]</msg>
+<status status="PASS" endtime="20190116 15:58:14.571" starttime="20190116 15:58:14.571"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${msg}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:14.572" level="INFO">Quantity Xpath: (//ul/li[contains(@class, '_msddli_')]/span)[3]</msg>
+<status status="PASS" endtime="20190116 15:58:14.572" starttime="20190116 15:58:14.572"></status>
+</kw>
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=${quantityXpath}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:14.572" level="INFO">Clicking element 'xpath=(//ul/li[contains(@class, '_msddli_')]/span)[3]'.</msg>
+<status status="PASS" endtime="20190116 15:58:15.212" starttime="20190116 15:58:14.572"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>Quantity_Of_Product.png</arg>
+</arguments>
+<msg timestamp="20190116 15:58:15.549" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Quantity_Of_Product.png"&gt;&lt;img src="Quantity_Of_Product.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190116 15:58:15.550" starttime="20190116 15:58:15.213"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:15.550" starttime="20190116 15:58:13.857"></status>
+</kw>
+<kw name="User Adds product to the cart" library="ProductPage">
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_add2cart}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:15.551" level="INFO">Clicking element 'id=add2CartBtn'.</msg>
+<status status="PASS" endtime="20190116 15:58:16.235" starttime="20190116 15:58:15.551"></status>
+</kw>
+<kw name="Get Text" library="ExtendedSelenium2Library">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>${shoppingBagItemCount}</arg>
+</arguments>
+<assign>
+<var>${numberOfProductsInBag}</var>
+</assign>
+<msg timestamp="20190116 15:58:17.178" level="INFO">${numberOfProductsInBag} = 3</msg>
+<status status="PASS" endtime="20190116 15:58:17.178" starttime="20190116 15:58:16.235"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>'${numberOfProductsInBag}'product in the bag</arg>
+</arguments>
+<status status="PASS" endtime="20190116 15:58:17.179" starttime="20190116 15:58:17.178"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>'${numberOfProductsInBag}'product in the bag</arg>
+</arguments>
+<msg timestamp="20190116 15:58:17.179" level="INFO">'3'product in the bag</msg>
+<status status="PASS" endtime="20190116 15:58:17.179" starttime="20190116 15:58:17.179"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>shopping_bag_popup.png</arg>
+</arguments>
+<msg timestamp="20190116 15:58:17.565" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="shopping_bag_popup.png"&gt;&lt;img src="shopping_bag_popup.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190116 15:58:17.566" starttime="20190116 15:58:17.180"></status>
+</kw>
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_checkout_popup}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:17.566" level="INFO">Clicking element 'id=GotoCartButton2a'.</msg>
+<status status="PASS" endtime="20190116 15:58:21.515" starttime="20190116 15:58:17.566"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:21.515" starttime="20190116 15:58:15.550"></status>
+</kw>
+<kw name="Guest User Proceeds to Checkout" library="CheckoutPage">
+<kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>Guest_Proceed2Checkout.png</arg>
+</arguments>
+<msg timestamp="20190116 15:58:21.840" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Guest_Proceed2Checkout.png"&gt;&lt;img src="Guest_Proceed2Checkout.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190116 15:58:21.840" starttime="20190116 15:58:21.516"></status>
+</kw>
+<kw name="Click Element" library="ExtendedSelenium2Library">
+<doc>Clicks an element identified by ``locator``.</doc>
+<arguments>
+<arg>${btn_guestshopper_checkout}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:21.842" level="INFO">Clicking element 'id=guestShopperContinue'.</msg>
+<status status="PASS" endtime="20190116 15:58:22.578" starttime="20190116 15:58:21.841"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:22.578" starttime="20190116 15:58:21.515"></status>
+</kw>
+<kw name="Guest User Types First Name" library="OrderShippingBillingViewPage">
+<kw name="Input Text" library="ExtendedSelenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_firstname}</arg>
+<arg>${FIRST_NAME}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:22.580" level="INFO">Typing text 'KMART' into text field 'id=first-name'</msg>
+<status status="PASS" endtime="20190116 15:58:25.732" starttime="20190116 15:58:22.579"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:25.733" starttime="20190116 15:58:22.579"></status>
+</kw>
+<kw name="Guest User Tpes Last Name" library="OrderShippingBillingViewPage">
+<kw name="Input Text" library="ExtendedSelenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_lastname}</arg>
+<arg>${LAST_NAME}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:25.734" level="INFO">Typing text 'TESTER' into text field 'id=last-name'</msg>
+<status status="PASS" endtime="20190116 15:58:26.100" starttime="20190116 15:58:25.734"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:26.100" starttime="20190116 15:58:25.733"></status>
+</kw>
+<kw name="Guest USer Input Email" library="OrderShippingBillingViewPage">
+<kw name="Input Text" library="ExtendedSelenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${txt_email}</arg>
+<arg>${EMAIL}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:26.105" level="INFO">Typing text 'K.Tester@Kmart.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20190116 15:58:26.472" starttime="20190116 15:58:26.104"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:26.472" starttime="20190116 15:58:26.103"></status>
+</kw>
+<kw name="Guest User Verifies Order Summary" library="OrderShippingBillingViewPage">
+<kw name="Scroll Element Into View" library="ExtendedSelenium2Library">
+<doc>Scrolls an element from given ``locator`` into view.</doc>
+<arguments>
+<arg>${orderSummary}</arg>
+</arguments>
+<msg timestamp="20190116 15:58:26.473" level="INFO">Scrolling element 'xpath=//*[@class='title-area']' into view.</msg>
+<status status="PASS" endtime="20190116 15:58:26.517" starttime="20190116 15:58:26.473"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>orderSummary.png</arg>
+</arguments>
+<msg timestamp="20190116 15:58:26.848" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="orderSummary.png"&gt;&lt;img src="orderSummary.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190116 15:58:26.848" starttime="20190116 15:58:26.517"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:26.848" starttime="20190116 15:58:26.472"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20190116 15:58:28.850" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190116 15:58:28.850" starttime="20190116 15:58:26.849"></status>
+</kw>
+<status status="PASS" endtime="20190116 15:58:28.851" critical="yes" starttime="20190116 15:57:49.222"></status>
+</test>
+<status status="PASS" endtime="20190116 15:58:28.856" starttime="20190116 15:57:48.509"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Shopping" pass="1">Shopping</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
