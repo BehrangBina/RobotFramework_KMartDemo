@@ -27,3 +27,5 @@ Select a Product
     Sleep  1s
     Capture Page Screenshot        Selected_Product.png
 
+Click on Kids menu
+    Click Element   id=topCatClass_kids
