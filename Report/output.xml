@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <robot rpa="false" generated="20190315 12:50:57.665" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
 <suite source="D:\Avocado\AVOCADO CONSULTING SERVICES PTY LTD\Solution Delivery - South\BenBina\RobotFrameWork Demo\Demo-WebBase\testcases\shopping.robot" id="s1" name="Shopping">
 <test id="s1-t1" name="Search Product and Add to bag as a guest">
+=======
+<robot generated="20190118 14:49:26.220" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="C:\Users\ben.bina\OneDrive - AVOCADO CONSULTING SERVICES PTY LTD\Technical Documentation\RobotFrameWork Demo\Demo-WebBase\testcases\shopping.robot" id="s1" name="Shopping">
+<test id="s1-t1" name="[Test Setup]">
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 <kw name="Convert Data From File" library="Excel_Adaptor">
 <kw name="Init Variables" library="Excel_Adaptor">
 <kw name="Set Suite Variable" library="BuiltIn">
@@ -10,8 +16,13 @@
 <arg>${URL}</arg>
 <arg>${empty}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.101" level="INFO">${URL} = </msg>
 <status status="PASS" endtime="20190315 12:50:58.101" starttime="20190315 12:50:58.100"></status>
+=======
+<msg timestamp="20190118 14:49:27.018" level="INFO">${URL} = </msg>
+<status status="PASS" endtime="20190118 14:49:27.018" starttime="20190118 14:49:27.016"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -19,8 +30,13 @@
 <arg>${SEARCH_QUERY}</arg>
 <arg>${empty}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.102" level="INFO">${SEARCH_QUERY} = </msg>
 <status status="PASS" endtime="20190315 12:50:58.102" starttime="20190315 12:50:58.101"></status>
+=======
+<msg timestamp="20190118 14:49:27.019" level="INFO">${SEARCH_QUERY} = </msg>
+<status status="PASS" endtime="20190118 14:49:27.019" starttime="20190118 14:49:27.018"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -28,8 +44,13 @@
 <arg>${QUANTITY}</arg>
 <arg>${empty}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.103" level="INFO">${QUANTITY} = </msg>
 <status status="PASS" endtime="20190315 12:50:58.103" starttime="20190315 12:50:58.102"></status>
+=======
+<msg timestamp="20190118 14:49:27.020" level="INFO">${QUANTITY} = </msg>
+<status status="PASS" endtime="20190118 14:49:27.020" starttime="20190118 14:49:27.019"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -37,8 +58,13 @@
 <arg>${PRODUCT_NAME}</arg>
 <arg>${empty}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.104" level="INFO">${PRODUCT_NAME} = </msg>
 <status status="PASS" endtime="20190315 12:50:58.104" starttime="20190315 12:50:58.103"></status>
+=======
+<msg timestamp="20190118 14:49:27.022" level="INFO">${PRODUCT_NAME} = </msg>
+<status status="PASS" endtime="20190118 14:49:27.022" starttime="20190118 14:49:27.021"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -46,8 +72,13 @@
 <arg>${FIRST_NAME}</arg>
 <arg>${empty}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.105" level="INFO">${FIRST_NAME} = </msg>
 <status status="PASS" endtime="20190315 12:50:58.105" starttime="20190315 12:50:58.104"></status>
+=======
+<msg timestamp="20190118 14:49:27.023" level="INFO">${FIRST_NAME} = </msg>
+<status status="PASS" endtime="20190118 14:49:27.023" starttime="20190118 14:49:27.022"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -55,8 +86,13 @@
 <arg>${LAST_NAME}</arg>
 <arg>${empty}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.107" level="INFO">${LAST_NAME} = </msg>
 <status status="PASS" endtime="20190315 12:50:58.107" starttime="20190315 12:50:58.106"></status>
+=======
+<msg timestamp="20190118 14:49:27.025" level="INFO">${LAST_NAME} = </msg>
+<status status="PASS" endtime="20190118 14:49:27.025" starttime="20190118 14:49:27.023"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -64,10 +100,17 @@
 <arg>${EMAIL}</arg>
 <arg>${empty}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.108" level="INFO">${EMAIL} = </msg>
 <status status="PASS" endtime="20190315 12:50:58.108" starttime="20190315 12:50:58.107"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:50:58.108" starttime="20190315 12:50:58.100"></status>
+=======
+<msg timestamp="20190118 14:49:27.027" level="INFO">${EMAIL} = </msg>
+<status status="PASS" endtime="20190118 14:49:27.027" starttime="20190118 14:49:27.026"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.027" starttime="20190118 14:49:27.016"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get Excel Enteries" library="Excel_Adaptor">
 <assign>
@@ -78,8 +121,13 @@
 <assign>
 <var>${my_dict}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.109" level="INFO">${my_dict} = {}</msg>
 <status status="PASS" endtime="20190315 12:50:58.109" starttime="20190315 12:50:58.109"></status>
+=======
+<msg timestamp="20190118 14:49:27.031" level="INFO">${my_dict} = {}</msg>
+<status status="PASS" endtime="20190118 14:49:27.032" starttime="20190118 14:49:27.029"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Open Excel" library="ExcelLibrary">
 <doc>Opens the Excel file from the path provided in the file name parameter.
@@ -87,7 +135,11 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arguments>
 <arg>kmart.xls</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:50:58.183" starttime="20190315 12:50:58.109"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:27.049" starttime="20190118 14:49:27.032"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get Row Count" library="ExcelLibrary">
 <doc>Returns the specific number of rows of the sheet name specified.</doc>
@@ -97,8 +149,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${rowCount}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.183" level="INFO">${rowCount} = 9</msg>
 <status status="PASS" endtime="20190315 12:50:58.183" starttime="20190315 12:50:58.183"></status>
+=======
+<msg timestamp="20190118 14:49:27.051" level="INFO">${rowCount} = 9</msg>
+<status status="PASS" endtime="20190118 14:49:27.051" starttime="20190118 14:49:27.050"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get Column Count" library="ExcelLibrary">
 <doc>Returns the specific number of columns of the sheet name specified.</doc>
@@ -108,8 +165,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${columnCount}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.184" level="INFO">${columnCount} = 2</msg>
 <status status="PASS" endtime="20190315 12:50:58.184" starttime="20190315 12:50:58.183"></status>
+=======
+<msg timestamp="20190118 14:49:27.052" level="INFO">${columnCount} = 2</msg>
+<status status="PASS" endtime="20190118 14:49:27.052" starttime="20190118 14:49:27.051"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw type="for" name="${i} IN RANGE [ 2 | ${rowCount} ]">
 <kw type="foritem" name="${i} = 2">
@@ -122,8 +184,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${v}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.185" level="INFO">${v} = [('A3', u'URL'), ('B3', u'https://www.kmart.com.au/')]</msg>
 <status status="PASS" endtime="20190315 12:50:58.185" starttime="20190315 12:50:58.184"></status>
+=======
+<msg timestamp="20190118 14:49:27.053" level="INFO">${v} = [('A3', u'URL'), ('B3', u'https://www.kmart.com.au/')]</msg>
+<status status="PASS" endtime="20190118 14:49:27.053" starttime="20190118 14:49:27.052"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -135,8 +202,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${key}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.185" level="INFO">${key} = URL</msg>
 <status status="PASS" endtime="20190315 12:50:58.185" starttime="20190315 12:50:58.185"></status>
+=======
+<msg timestamp="20190118 14:49:27.054" level="INFO">${key} = URL</msg>
+<status status="PASS" endtime="20190118 14:49:27.054" starttime="20190118 14:49:27.053"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -148,8 +220,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${value}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.186" level="INFO">${value} = https://www.kmart.com.au/</msg>
 <status status="PASS" endtime="20190315 12:50:58.186" starttime="20190315 12:50:58.185"></status>
+=======
+<msg timestamp="20190118 14:49:27.054" level="INFO">${value} = https://www.kmart.com.au/</msg>
+<status status="PASS" endtime="20190118 14:49:27.054" starttime="20190118 14:49:27.054"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -158,9 +235,15 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${key}</arg>
 <arg>${value}</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:50:58.186" starttime="20190315 12:50:58.186"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:50:58.186" starttime="20190315 12:50:58.184"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:27.055" starttime="20190118 14:49:27.055"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.055" starttime="20190118 14:49:27.052"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw type="foritem" name="${i} = 3">
 <kw name="Get Row Values" library="ExcelLibrary">
@@ -172,8 +255,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${v}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.187" level="INFO">${v} = [('A4', u'SEARCH_QUERY'), ('B4', u'iphone x case')]</msg>
 <status status="PASS" endtime="20190315 12:50:58.187" starttime="20190315 12:50:58.186"></status>
+=======
+<msg timestamp="20190118 14:49:27.056" level="INFO">${v} = [('A4', u'SEARCH_QUERY'), ('B4', u'iPhone X')]</msg>
+<status status="PASS" endtime="20190118 14:49:27.056" starttime="20190118 14:49:27.055"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -185,8 +273,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${key}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.187" level="INFO">${key} = SEARCH_QUERY</msg>
 <status status="PASS" endtime="20190315 12:50:58.187" starttime="20190315 12:50:58.187"></status>
+=======
+<msg timestamp="20190118 14:49:27.056" level="INFO">${key} = SEARCH_QUERY</msg>
+<status status="PASS" endtime="20190118 14:49:27.056" starttime="20190118 14:49:27.056"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -198,8 +291,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${value}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.188" level="INFO">${value} = iphone x case</msg>
 <status status="PASS" endtime="20190315 12:50:58.188" starttime="20190315 12:50:58.187"></status>
+=======
+<msg timestamp="20190118 14:49:27.057" level="INFO">${value} = iPhone X</msg>
+<status status="PASS" endtime="20190118 14:49:27.057" starttime="20190118 14:49:27.056"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -208,9 +306,15 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${key}</arg>
 <arg>${value}</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:50:58.188" starttime="20190315 12:50:58.188"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:50:58.188" starttime="20190315 12:50:58.186"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:27.058" starttime="20190118 14:49:27.057"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.058" starttime="20190118 14:49:27.055"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw type="foritem" name="${i} = 4">
 <kw name="Get Row Values" library="ExcelLibrary">
@@ -222,8 +326,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${v}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.189" level="INFO">${v} = [('A5', u'QUANTITY'), ('B5', 3.0)]</msg>
 <status status="PASS" endtime="20190315 12:50:58.189" starttime="20190315 12:50:58.188"></status>
+=======
+<msg timestamp="20190118 14:49:27.058" level="INFO">${v} = [('A5', u'QUANTITY'), ('B5', 3.0)]</msg>
+<status status="PASS" endtime="20190118 14:49:27.058" starttime="20190118 14:49:27.058"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -235,8 +344,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${key}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.189" level="INFO">${key} = QUANTITY</msg>
 <status status="PASS" endtime="20190315 12:50:58.189" starttime="20190315 12:50:58.189"></status>
+=======
+<msg timestamp="20190118 14:49:27.059" level="INFO">${key} = QUANTITY</msg>
+<status status="PASS" endtime="20190118 14:49:27.059" starttime="20190118 14:49:27.058"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -248,8 +362,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${value}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.190" level="INFO">${value} = 3.0</msg>
 <status status="PASS" endtime="20190315 12:50:58.190" starttime="20190315 12:50:58.190"></status>
+=======
+<msg timestamp="20190118 14:49:27.059" level="INFO">${value} = 3.0</msg>
+<status status="PASS" endtime="20190118 14:49:27.060" starttime="20190118 14:49:27.059"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -258,9 +377,15 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${key}</arg>
 <arg>${value}</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:50:58.190" starttime="20190315 12:50:58.190"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:50:58.190" starttime="20190315 12:50:58.188"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:27.060" starttime="20190118 14:49:27.060"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.060" starttime="20190118 14:49:27.058"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw type="foritem" name="${i} = 5">
 <kw name="Get Row Values" library="ExcelLibrary">
@@ -272,8 +397,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${v}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.191" level="INFO">${v} = [('A6', u'PRODUCT_NAME'), ('B6', u'iPhone X Phone Guard')]</msg>
 <status status="PASS" endtime="20190315 12:50:58.191" starttime="20190315 12:50:58.190"></status>
+=======
+<msg timestamp="20190118 14:49:27.061" level="INFO">${v} = [('A6', u'PRODUCT_NAME'), ('B6', u'iPhone X Phone Guard')]</msg>
+<status status="PASS" endtime="20190118 14:49:27.061" starttime="20190118 14:49:27.061"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -285,8 +415,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${key}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.191" level="INFO">${key} = PRODUCT_NAME</msg>
 <status status="PASS" endtime="20190315 12:50:58.191" starttime="20190315 12:50:58.191"></status>
+=======
+<msg timestamp="20190118 14:49:27.062" level="INFO">${key} = PRODUCT_NAME</msg>
+<status status="PASS" endtime="20190118 14:49:27.062" starttime="20190118 14:49:27.061"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -298,8 +433,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${value}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.192" level="INFO">${value} = iPhone X Phone Guard</msg>
 <status status="PASS" endtime="20190315 12:50:58.192" starttime="20190315 12:50:58.191"></status>
+=======
+<msg timestamp="20190118 14:49:27.064" level="INFO">${value} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190118 14:49:27.064" starttime="20190118 14:49:27.062"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -308,9 +448,15 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${key}</arg>
 <arg>${value}</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:50:58.192" starttime="20190315 12:50:58.192"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:50:58.192" starttime="20190315 12:50:58.190"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:27.066" starttime="20190118 14:49:27.065"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.066" starttime="20190118 14:49:27.060"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw type="foritem" name="${i} = 6">
 <kw name="Get Row Values" library="ExcelLibrary">
@@ -322,8 +468,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${v}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.193" level="INFO">${v} = [('A7', u'FIRST_NAME'), ('B7', u'KMART')]</msg>
 <status status="PASS" endtime="20190315 12:50:58.193" starttime="20190315 12:50:58.192"></status>
+=======
+<msg timestamp="20190118 14:49:27.069" level="INFO">${v} = [('A7', u'FIRST_NAME'), ('B7', u'KMART')]</msg>
+<status status="PASS" endtime="20190118 14:49:27.069" starttime="20190118 14:49:27.068"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -335,8 +486,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${key}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.193" level="INFO">${key} = FIRST_NAME</msg>
 <status status="PASS" endtime="20190315 12:50:58.194" starttime="20190315 12:50:58.193"></status>
+=======
+<msg timestamp="20190118 14:49:27.071" level="INFO">${key} = FIRST_NAME</msg>
+<status status="PASS" endtime="20190118 14:49:27.071" starttime="20190118 14:49:27.070"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -348,8 +504,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${value}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.194" level="INFO">${value} = KMART</msg>
 <status status="PASS" endtime="20190315 12:50:58.194" starttime="20190315 12:50:58.194"></status>
+=======
+<msg timestamp="20190118 14:49:27.072" level="INFO">${value} = KMART</msg>
+<status status="PASS" endtime="20190118 14:49:27.072" starttime="20190118 14:49:27.071"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -358,9 +519,15 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${key}</arg>
 <arg>${value}</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:50:58.194" starttime="20190315 12:50:58.194"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:50:58.194" starttime="20190315 12:50:58.192"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:27.073" starttime="20190118 14:49:27.072"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.073" starttime="20190118 14:49:27.067"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw type="foritem" name="${i} = 7">
 <kw name="Get Row Values" library="ExcelLibrary">
@@ -372,8 +539,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${v}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.195" level="INFO">${v} = [('A8', u'LAST_NAME'), ('B8', u'TESTER')]</msg>
 <status status="PASS" endtime="20190315 12:50:58.195" starttime="20190315 12:50:58.195"></status>
+=======
+<msg timestamp="20190118 14:49:27.074" level="INFO">${v} = [('A8', u'LAST_NAME'), ('B8', u'TESTER')]</msg>
+<status status="PASS" endtime="20190118 14:49:27.074" starttime="20190118 14:49:27.073"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -385,8 +557,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${key}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.196" level="INFO">${key} = LAST_NAME</msg>
 <status status="PASS" endtime="20190315 12:50:58.196" starttime="20190315 12:50:58.195"></status>
+=======
+<msg timestamp="20190118 14:49:27.075" level="INFO">${key} = LAST_NAME</msg>
+<status status="PASS" endtime="20190118 14:49:27.075" starttime="20190118 14:49:27.074"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -398,8 +575,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${value}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.196" level="INFO">${value} = TESTER</msg>
 <status status="PASS" endtime="20190315 12:50:58.196" starttime="20190315 12:50:58.196"></status>
+=======
+<msg timestamp="20190118 14:49:27.076" level="INFO">${value} = TESTER</msg>
+<status status="PASS" endtime="20190118 14:49:27.076" starttime="20190118 14:49:27.075"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -408,9 +590,15 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${key}</arg>
 <arg>${value}</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:50:58.197" starttime="20190315 12:50:58.196"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:50:58.197" starttime="20190315 12:50:58.194"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:27.076" starttime="20190118 14:49:27.076"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.076" starttime="20190118 14:49:27.073"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw type="foritem" name="${i} = 8">
 <kw name="Get Row Values" library="ExcelLibrary">
@@ -422,8 +610,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${v}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.197" level="INFO">${v} = [('A9', u'EMAIL'), ('B9', u'K.Tester@Kmart.com')]</msg>
 <status status="PASS" endtime="20190315 12:50:58.197" starttime="20190315 12:50:58.197"></status>
+=======
+<msg timestamp="20190118 14:49:27.078" level="INFO">${v} = [('A9', u'EMAIL'), ('B9', u'K.Tester@Kmart.com')]</msg>
+<status status="PASS" endtime="20190118 14:49:27.078" starttime="20190118 14:49:27.077"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -435,8 +628,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${key}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.198" level="INFO">${key} = EMAIL</msg>
 <status status="PASS" endtime="20190315 12:50:58.198" starttime="20190315 12:50:58.197"></status>
+=======
+<msg timestamp="20190118 14:49:27.079" level="INFO">${key} = EMAIL</msg>
+<status status="PASS" endtime="20190118 14:49:27.079" starttime="20190118 14:49:27.078"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
 <doc>Uses the column and row to return the data from that cell.</doc>
@@ -448,8 +646,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${value}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.198" level="INFO">${value} = K.Tester@Kmart.com</msg>
 <status status="PASS" endtime="20190315 12:50:58.198" starttime="20190315 12:50:58.198"></status>
+=======
+<msg timestamp="20190118 14:49:27.081" level="INFO">${value} = K.Tester@Kmart.com</msg>
+<status status="PASS" endtime="20190118 14:49:27.081" starttime="20190118 14:49:27.080"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set To Dictionary" library="Collections">
 <doc>Adds the given ``key_value_pairs`` and ``items`` to the ``dictionary``.</doc>
@@ -458,6 +661,7 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${key}</arg>
 <arg>${value}</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:50:58.199" starttime="20190315 12:50:58.198"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:50:58.199" starttime="20190315 12:50:58.197"></status>
@@ -466,6 +670,16 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 </kw>
 <msg timestamp="20190315 12:50:58.199" level="INFO">${v} = {u'URL': u'https://www.kmart.com.au/', u'SEARCH_QUERY': u'iphone x case', u'QUANTITY': 3.0, u'PRODUCT_NAME': u'iPhone X Phone Guard', u'FIRST_NAME': u'KMART', u'LAST_NAME': u'TESTER', u'EMAIL': u'K.Te...</msg>
 <status status="PASS" endtime="20190315 12:50:58.199" starttime="20190315 12:50:58.108"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:27.082" starttime="20190118 14:49:27.082"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.082" starttime="20190118 14:49:27.077"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.082" starttime="20190118 14:49:27.052"></status>
+</kw>
+<msg timestamp="20190118 14:49:27.083" level="INFO">${v} = {u'URL': u'https://www.kmart.com.au/', u'SEARCH_QUERY': u'iPhone X', u'QUANTITY': 3.0, u'PRODUCT_NAME': u'iPhone X Phone Guard', u'FIRST_NAME': u'KMART', u'LAST_NAME': u'TESTER', u'EMAIL': u'K.Tester@...</msg>
+<status status="PASS" endtime="20190118 14:49:27.083" starttime="20190118 14:49:27.028"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -476,8 +690,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${tmp}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.199" level="INFO">${tmp} = https://www.kmart.com.au/</msg>
 <status status="PASS" endtime="20190315 12:50:58.199" starttime="20190315 12:50:58.199"></status>
+=======
+<msg timestamp="20190118 14:49:27.083" level="INFO">${tmp} = https://www.kmart.com.au/</msg>
+<status status="PASS" endtime="20190118 14:49:27.083" starttime="20190118 14:49:27.083"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -485,8 +704,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${URL}</arg>
 <arg>${tmp}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.200" level="INFO">${URL} = https://www.kmart.com.au/</msg>
 <status status="PASS" endtime="20190315 12:50:58.200" starttime="20190315 12:50:58.199"></status>
+=======
+<msg timestamp="20190118 14:49:27.084" level="INFO">${URL} = https://www.kmart.com.au/</msg>
+<status status="PASS" endtime="20190118 14:49:27.085" starttime="20190118 14:49:27.084"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -497,8 +721,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${tmp}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.200" level="INFO">${tmp} = iphone x case</msg>
 <status status="PASS" endtime="20190315 12:50:58.200" starttime="20190315 12:50:58.200"></status>
+=======
+<msg timestamp="20190118 14:49:27.085" level="INFO">${tmp} = iPhone X</msg>
+<status status="PASS" endtime="20190118 14:49:27.086" starttime="20190118 14:49:27.085"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -506,8 +735,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${SEARCH_QUERY}</arg>
 <arg>${tmp}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.200" level="INFO">${SEARCH_QUERY} = iphone x case</msg>
 <status status="PASS" endtime="20190315 12:50:58.200" starttime="20190315 12:50:58.200"></status>
+=======
+<msg timestamp="20190118 14:49:27.086" level="INFO">${SEARCH_QUERY} = iPhone X</msg>
+<status status="PASS" endtime="20190118 14:49:27.086" starttime="20190118 14:49:27.086"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -518,8 +752,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${tmp}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.201" level="INFO">${tmp} = 3.0</msg>
 <status status="PASS" endtime="20190315 12:50:58.201" starttime="20190315 12:50:58.201"></status>
+=======
+<msg timestamp="20190118 14:49:27.088" level="INFO">${tmp} = 3.0</msg>
+<status status="PASS" endtime="20190118 14:49:27.088" starttime="20190118 14:49:27.087"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -527,8 +766,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${QUANTITY}</arg>
 <arg>${tmp}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.201" level="INFO">${QUANTITY} = 3.0</msg>
 <status status="PASS" endtime="20190315 12:50:58.201" starttime="20190315 12:50:58.201"></status>
+=======
+<msg timestamp="20190118 14:49:27.089" level="INFO">${QUANTITY} = 3.0</msg>
+<status status="PASS" endtime="20190118 14:49:27.089" starttime="20190118 14:49:27.088"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -539,8 +783,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${tmp}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.202" level="INFO">${tmp} = iPhone X Phone Guard</msg>
 <status status="PASS" endtime="20190315 12:50:58.202" starttime="20190315 12:50:58.202"></status>
+=======
+<msg timestamp="20190118 14:49:27.089" level="INFO">${tmp} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190118 14:49:27.089" starttime="20190118 14:49:27.089"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -548,8 +797,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${PRODUCT_NAME}</arg>
 <arg>${tmp}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.202" level="INFO">${PRODUCT_NAME} = iPhone X Phone Guard</msg>
 <status status="PASS" endtime="20190315 12:50:58.202" starttime="20190315 12:50:58.202"></status>
+=======
+<msg timestamp="20190118 14:49:27.090" level="INFO">${PRODUCT_NAME} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190118 14:49:27.090" starttime="20190118 14:49:27.090"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -560,8 +814,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${tmp}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.203" level="INFO">${tmp} = iPhone X Phone Guard</msg>
 <status status="PASS" endtime="20190315 12:50:58.203" starttime="20190315 12:50:58.202"></status>
+=======
+<msg timestamp="20190118 14:49:27.091" level="INFO">${tmp} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190118 14:49:27.091" starttime="20190118 14:49:27.091"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -569,8 +828,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${PRODUCT_NAME}</arg>
 <arg>${tmp}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.203" level="INFO">${PRODUCT_NAME} = iPhone X Phone Guard</msg>
 <status status="PASS" endtime="20190315 12:50:58.203" starttime="20190315 12:50:58.203"></status>
+=======
+<msg timestamp="20190118 14:49:27.092" level="INFO">${PRODUCT_NAME} = iPhone X Phone Guard</msg>
+<status status="PASS" endtime="20190118 14:49:27.092" starttime="20190118 14:49:27.092"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -581,8 +845,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${tmp}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.204" level="INFO">${tmp} = KMART</msg>
 <status status="PASS" endtime="20190315 12:50:58.204" starttime="20190315 12:50:58.203"></status>
+=======
+<msg timestamp="20190118 14:49:27.093" level="INFO">${tmp} = KMART</msg>
+<status status="PASS" endtime="20190118 14:49:27.093" starttime="20190118 14:49:27.093"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -590,8 +859,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${FIRST_NAME}</arg>
 <arg>${tmp}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.204" level="INFO">${FIRST_NAME} = KMART</msg>
 <status status="PASS" endtime="20190315 12:50:58.204" starttime="20190315 12:50:58.204"></status>
+=======
+<msg timestamp="20190118 14:49:27.094" level="INFO">${FIRST_NAME} = KMART</msg>
+<status status="PASS" endtime="20190118 14:49:27.094" starttime="20190118 14:49:27.093"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -602,8 +876,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${tmp}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.204" level="INFO">${tmp} = TESTER</msg>
 <status status="PASS" endtime="20190315 12:50:58.204" starttime="20190315 12:50:58.204"></status>
+=======
+<msg timestamp="20190118 14:49:27.095" level="INFO">${tmp} = TESTER</msg>
+<status status="PASS" endtime="20190118 14:49:27.095" starttime="20190118 14:49:27.094"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -611,8 +890,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${LAST_NAME}</arg>
 <arg>${tmp}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.205" level="INFO">${LAST_NAME} = TESTER</msg>
 <status status="PASS" endtime="20190315 12:50:58.205" starttime="20190315 12:50:58.204"></status>
+=======
+<msg timestamp="20190118 14:49:27.098" level="INFO">${LAST_NAME} = TESTER</msg>
+<status status="PASS" endtime="20190118 14:49:27.099" starttime="20190118 14:49:27.097"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
@@ -623,8 +907,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${tmp}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.205" level="INFO">${tmp} = K.Tester@Kmart.com</msg>
 <status status="PASS" endtime="20190315 12:50:58.205" starttime="20190315 12:50:58.205"></status>
+=======
+<msg timestamp="20190118 14:49:27.100" level="INFO">${tmp} = K.Tester@Kmart.com</msg>
+<status status="PASS" endtime="20190118 14:49:27.100" starttime="20190118 14:49:27.100"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Set Suite Variable" library="BuiltIn">
 <doc>Makes a variable available everywhere within the scope of the current suite.</doc>
@@ -632,17 +921,31 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${EMAIL}</arg>
 <arg>${tmp}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.205" level="INFO">${EMAIL} = K.Tester@Kmart.com</msg>
 <status status="PASS" endtime="20190315 12:50:58.206" starttime="20190315 12:50:58.205"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:50:58.206" starttime="20190315 12:50:58.099"></status>
+=======
+<msg timestamp="20190118 14:49:27.101" level="INFO">${EMAIL} = K.Tester@Kmart.com</msg>
+<status status="PASS" endtime="20190118 14:49:27.101" starttime="20190118 14:49:27.101"></status>
 </kw>
+<status status="PASS" endtime="20190118 14:49:27.102" starttime="20190118 14:49:27.015"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
+</kw>
+<status status="PASS" endtime="20190118 14:49:27.103" critical="yes" starttime="20190118 14:49:27.013"></status>
+</test>
+<test id="s1-t2" name="Search Product and Add to bag as a guest">
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>'Searching Product and Add to bag as a guest...'</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:50:58.207" starttime="20190315 12:50:58.206"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:27.113" starttime="20190118 14:49:27.110"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="User Navigates To Homepage" library="HomePage">
 <kw name="Open Browser" library="ExtendedSelenium2Library">
@@ -651,22 +954,38 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:50:58.209" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
 <status status="PASS" endtime="20190315 12:51:01.669" starttime="20190315 12:50:58.209"></status>
 </kw>
 <kw name="Maximize Browser Window" library="ExtendedSelenium2Library">
 <doc>Maximizes current browser window.</doc>
 <status status="PASS" endtime="20190315 12:51:02.787" starttime="20190315 12:51:01.669"></status>
+=======
+<msg timestamp="20190118 14:49:27.115" level="INFO">Opening browser 'chrome' to base url 'about:blank'</msg>
+<status status="PASS" endtime="20190118 14:49:30.655" starttime="20190118 14:49:27.115"></status>
+</kw>
+<kw name="Maximize Browser Window" library="ExtendedSelenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190118 14:49:31.777" starttime="20190118 14:49:30.656"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Go To" library="ExtendedSelenium2Library">
 <doc>Navigates the active browser instance to the provided URL.</doc>
 <arguments>
 <arg>${URL}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:02.787" level="INFO">Opening url 'https://www.kmart.com.au/'</msg>
 <status status="PASS" endtime="20190315 12:51:04.291" starttime="20190315 12:51:02.787"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:04.291" starttime="20190315 12:50:58.208"></status>
+=======
+<msg timestamp="20190118 14:49:31.777" level="INFO">Opening url 'https://www.kmart.com.au/'</msg>
+<status status="PASS" endtime="20190118 14:49:36.200" starttime="20190118 14:49:31.777"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:36.200" starttime="20190118 14:49:27.114"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="User Inputs Query into Search" library="HomePage">
 <kw name="Input Text" library="ExtendedSelenium2Library">
@@ -675,10 +994,17 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${txt_search}</arg>
 <arg>${SEARCH_QUERY}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:04.293" level="INFO">Typing text 'iphone x case' into text field 'name=searchTerm'</msg>
 <status status="PASS" endtime="20190315 12:51:04.429" starttime="20190315 12:51:04.293"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:04.429" starttime="20190315 12:51:04.292"></status>
+=======
+<msg timestamp="20190118 14:49:36.203" level="INFO">Typing text 'iPhone X' into text field 'name=searchTerm'</msg>
+<status status="PASS" endtime="20190118 14:49:36.467" starttime="20190118 14:49:36.202"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:36.467" starttime="20190118 14:49:36.201"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="User Clicks on Search Button" library="HomePage">
 <kw name="Click Element" library="ExtendedSelenium2Library">
@@ -686,10 +1012,17 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arguments>
 <arg>${btn_search}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:04.430" level="INFO">Clicking element 'id=search_submit'.</msg>
 <status status="PASS" endtime="20190315 12:51:07.680" starttime="20190315 12:51:04.429"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:07.680" starttime="20190315 12:51:04.429"></status>
+=======
+<msg timestamp="20190118 14:49:36.469" level="INFO">Clicking element 'id=search_submit'.</msg>
+<status status="PASS" endtime="20190118 14:49:41.272" starttime="20190118 14:49:36.469"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:41.272" starttime="20190118 14:49:36.468"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="User Closes The KMail Pop-up" library="HomePage">
 <kw name="Is Element Visible" library="ExtendedSelenium2Library">
@@ -700,8 +1033,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${showed}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:07.703" level="INFO">${showed} = True</msg>
 <status status="PASS" endtime="20190315 12:51:07.703" starttime="20190315 12:51:07.680"></status>
+=======
+<msg timestamp="20190118 14:49:41.309" level="INFO">${showed} = True</msg>
+<status status="PASS" endtime="20190118 14:49:41.309" starttime="20190118 14:49:41.274"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -715,20 +1053,34 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arguments>
 <arg>${btn_kmail_close}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:07.704" level="INFO">Clicking element 'xpath=//*[@id="KmailSignupDisplay"]//a'.</msg>
 <status status="PASS" endtime="20190315 12:51:08.289" starttime="20190315 12:51:07.704"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:08.289" starttime="20190315 12:51:07.703"></status>
+=======
+<msg timestamp="20190118 14:49:41.310" level="INFO">Clicking element 'xpath=//*[@id="KmailSignupDisplay"]//a'.</msg>
+<status status="PASS" endtime="20190118 14:49:41.906" starttime="20190118 14:49:41.309"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:41.906" starttime="20190118 14:49:41.309"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 <arg>searched_product.png</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:08.629" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="searched_product.png"&gt;&lt;img src="searched_product.png" width="800px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" endtime="20190315 12:51:08.629" starttime="20190315 12:51:08.290"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:08.629" starttime="20190315 12:51:07.680"></status>
+=======
+<msg timestamp="20190118 14:49:42.270" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="searched_product.png"&gt;&lt;img src="searched_product.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190118 14:49:42.270" starttime="20190118 14:49:41.906"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:42.270" starttime="20190118 14:49:41.273"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Select a Product" library="HomePage">
 <kw name="Catenate" library="BuiltIn">
@@ -739,8 +1091,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${pruductXpath}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:08.630" level="INFO">${pruductXpath} = //*[@class="title" and text()='iPhone X Phone Guard']</msg>
 <status status="PASS" endtime="20190315 12:51:08.630" starttime="20190315 12:51:08.630"></status>
+=======
+<msg timestamp="20190118 14:49:42.272" level="INFO">${pruductXpath} = //*[@class="title" and text()='iPhone X Phone Guard']</msg>
+<status status="PASS" endtime="20190118 14:49:42.272" starttime="20190118 14:49:42.272"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -751,57 +1108,93 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${msg}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:08.631" level="INFO">${msg} = Product Xpath: //*[@class="title" and text()='iPhone X Phone Guard']</msg>
 <status status="PASS" endtime="20190315 12:51:08.631" starttime="20190315 12:51:08.631"></status>
+=======
+<msg timestamp="20190118 14:49:42.273" level="INFO">${msg} = Product Xpath: //*[@class="title" and text()='iPhone X Phone Guard']</msg>
+<status status="PASS" endtime="20190118 14:49:42.273" starttime="20190118 14:49:42.273"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${msg}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:08.631" level="INFO">Product Xpath: //*[@class="title" and text()='iPhone X Phone Guard']</msg>
 <status status="PASS" endtime="20190315 12:51:08.631" starttime="20190315 12:51:08.631"></status>
+=======
+<msg timestamp="20190118 14:49:42.274" level="INFO">Product Xpath: //*[@class="title" and text()='iPhone X Phone Guard']</msg>
+<status status="PASS" endtime="20190118 14:49:42.274" starttime="20190118 14:49:42.274"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${msg}</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:51:08.632" starttime="20190315 12:51:08.632"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:42.275" starttime="20190118 14:49:42.275"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Scroll Element Into View" library="ExtendedSelenium2Library">
 <doc>Scrolls an element from given ``locator`` into view.</doc>
 <arguments>
 <arg>${productGrid}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:08.633" level="INFO">Scrolling element 'xpath=//*[@class='grid_mode']' into view.</msg>
 <status status="PASS" endtime="20190315 12:51:08.656" starttime="20190315 12:51:08.632"></status>
+=======
+<msg timestamp="20190118 14:49:42.276" level="INFO">Scrolling element 'xpath=//*[@class='grid_mode']' into view.</msg>
+<status status="PASS" endtime="20190118 14:49:42.336" starttime="20190118 14:49:42.275"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=${pruductXpath}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:08.657" level="INFO">Clicking element 'xpath=//*[@class="title" and text()='iPhone X Phone Guard']'.</msg>
 <status status="PASS" endtime="20190315 12:51:10.761" starttime="20190315 12:51:08.657"></status>
+=======
+<msg timestamp="20190118 14:49:42.337" level="INFO">Clicking element 'xpath=//*[@class="title" and text()='iPhone X Phone Guard']'.</msg>
+<status status="PASS" endtime="20190118 14:49:46.474" starttime="20190118 14:49:42.336"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>1s</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:11.763" level="INFO">Slept 1 second</msg>
 <status status="PASS" endtime="20190315 12:51:11.763" starttime="20190315 12:51:10.762"></status>
+=======
+<msg timestamp="20190118 14:49:47.475" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20190118 14:49:47.475" starttime="20190118 14:49:46.474"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 <arg>Selected_Product.png</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:12.096" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Selected_Product.png"&gt;&lt;img src="Selected_Product.png" width="800px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" endtime="20190315 12:51:12.096" starttime="20190315 12:51:11.763"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:12.096" starttime="20190315 12:51:08.630"></status>
+=======
+<msg timestamp="20190118 14:49:47.818" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Selected_Product.png"&gt;&lt;img src="Selected_Product.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190118 14:49:47.819" starttime="20190118 14:49:47.475"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:47.819" starttime="20190118 14:49:42.271"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="User Selects Quantity" library="ProductPage">
 <kw name="Click Element" library="ExtendedSelenium2Library">
@@ -809,8 +1202,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arguments>
 <arg>${quantity_dropdown}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:12.097" level="INFO">Clicking element 'id=quantity_1897969_QtyDropDown_title'.</msg>
 <status status="PASS" endtime="20190315 12:51:12.694" starttime="20190315 12:51:12.097"></status>
+=======
+<msg timestamp="20190118 14:49:47.821" level="INFO">Clicking element 'id=quantity_1897969_QtyDropDown_title'.</msg>
+<status status="PASS" endtime="20190118 14:49:48.524" starttime="20190118 14:49:47.820"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -820,8 +1218,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${quantity}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:12.694" level="INFO">${quantity} = 3</msg>
 <status status="PASS" endtime="20190315 12:51:12.694" starttime="20190315 12:51:12.694"></status>
+=======
+<msg timestamp="20190118 14:49:48.524" level="INFO">${quantity} = 3</msg>
+<status status="PASS" endtime="20190118 14:49:48.524" starttime="20190118 14:49:48.524"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -831,8 +1234,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${quantityXpath}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:12.695" level="INFO">${quantityXpath} = (//ul/li[contains(@class, '_msddli_')]/span)[3]</msg>
 <status status="PASS" endtime="20190315 12:51:12.695" starttime="20190315 12:51:12.694"></status>
+=======
+<msg timestamp="20190118 14:49:48.525" level="INFO">${quantityXpath} = (//ul/li[contains(@class, '_msddli_')]/span)[3]</msg>
+<status status="PASS" endtime="20190118 14:49:48.525" starttime="20190118 14:49:48.525"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <doc>Catenates the given items together and returns the resulted string.</doc>
@@ -843,34 +1251,56 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${msg}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:12.695" level="INFO">${msg} = Quantity Xpath: (//ul/li[contains(@class, '_msddli_')]/span)[3]</msg>
 <status status="PASS" endtime="20190315 12:51:12.695" starttime="20190315 12:51:12.695"></status>
+=======
+<msg timestamp="20190118 14:49:48.525" level="INFO">${msg} = Quantity Xpath: (//ul/li[contains(@class, '_msddli_')]/span)[3]</msg>
+<status status="PASS" endtime="20190118 14:49:48.525" starttime="20190118 14:49:48.525"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>${msg}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:12.695" level="INFO">Quantity Xpath: (//ul/li[contains(@class, '_msddli_')]/span)[3]</msg>
 <status status="PASS" endtime="20190315 12:51:12.695" starttime="20190315 12:51:12.695"></status>
+=======
+<msg timestamp="20190118 14:49:48.526" level="INFO">Quantity Xpath: (//ul/li[contains(@class, '_msddli_')]/span)[3]</msg>
+<status status="PASS" endtime="20190118 14:49:48.526" starttime="20190118 14:49:48.525"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=${quantityXpath}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:12.696" level="INFO">Clicking element 'xpath=(//ul/li[contains(@class, '_msddli_')]/span)[3]'.</msg>
 <status status="PASS" endtime="20190315 12:51:13.287" starttime="20190315 12:51:12.695"></status>
+=======
+<msg timestamp="20190118 14:49:48.526" level="INFO">Clicking element 'xpath=(//ul/li[contains(@class, '_msddli_')]/span)[3]'.</msg>
+<status status="PASS" endtime="20190118 14:49:49.133" starttime="20190118 14:49:48.526"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 <arg>Quantity_Of_Product.png</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:13.633" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Quantity_Of_Product.png"&gt;&lt;img src="Quantity_Of_Product.png" width="800px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" endtime="20190315 12:51:13.633" starttime="20190315 12:51:13.288"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:13.633" starttime="20190315 12:51:12.096"></status>
+=======
+<msg timestamp="20190118 14:49:49.493" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Quantity_Of_Product.png"&gt;&lt;img src="Quantity_Of_Product.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190118 14:49:49.494" starttime="20190118 14:49:49.133"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:49.494" starttime="20190118 14:49:47.820"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="User Adds product to the cart" library="ProductPage">
 <kw name="Click Element" library="ExtendedSelenium2Library">
@@ -878,8 +1308,13 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arguments>
 <arg>${btn_add2cart}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:13.635" level="INFO">Clicking element 'id=add2CartBtn'.</msg>
 <status status="PASS" endtime="20190315 12:51:14.466" starttime="20190315 12:51:13.634"></status>
+=======
+<msg timestamp="20190118 14:49:49.496" level="INFO">Clicking element 'id=add2CartBtn'.</msg>
+<status status="PASS" endtime="20190118 14:49:50.174" starttime="20190118 14:49:49.496"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Get Text" library="ExtendedSelenium2Library">
 <doc>Returns the text value of element identified by `locator`.</doc>
@@ -889,41 +1324,67 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <assign>
 <var>${numberOfProductsInBag}</var>
 </assign>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:14.489" level="INFO">${numberOfProductsInBag} = 3</msg>
 <status status="PASS" endtime="20190315 12:51:14.489" starttime="20190315 12:51:14.466"></status>
+=======
+<msg timestamp="20190118 14:49:50.557" level="INFO">${numberOfProductsInBag} = 3</msg>
+<status status="PASS" endtime="20190118 14:49:50.557" starttime="20190118 14:49:50.174"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>'${numberOfProductsInBag}'product in the bag</arg>
 </arguments>
+<<<<<<< HEAD
 <status status="PASS" endtime="20190315 12:51:14.490" starttime="20190315 12:51:14.489"></status>
+=======
+<status status="PASS" endtime="20190118 14:49:50.558" starttime="20190118 14:49:50.558"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>'${numberOfProductsInBag}'product in the bag</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:14.491" level="INFO">'3'product in the bag</msg>
 <status status="PASS" endtime="20190315 12:51:14.491" starttime="20190315 12:51:14.491"></status>
+=======
+<msg timestamp="20190118 14:49:50.559" level="INFO">'3'product in the bag</msg>
+<status status="PASS" endtime="20190118 14:49:50.559" starttime="20190118 14:49:50.558"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 <arg>shopping_bag_popup.png</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:14.849" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="shopping_bag_popup.png"&gt;&lt;img src="shopping_bag_popup.png" width="800px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" endtime="20190315 12:51:14.849" starttime="20190315 12:51:14.491"></status>
+=======
+<msg timestamp="20190118 14:49:50.997" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="shopping_bag_popup.png"&gt;&lt;img src="shopping_bag_popup.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190118 14:49:50.998" starttime="20190118 14:49:50.559"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_checkout_popup}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:14.850" level="INFO">Clicking element 'id=GotoCartButton2a'.</msg>
 <status status="PASS" endtime="20190315 12:51:16.743" starttime="20190315 12:51:14.849"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:16.743" starttime="20190315 12:51:13.634"></status>
+=======
+<msg timestamp="20190118 14:49:50.999" level="INFO">Clicking element 'id=GotoCartButton2a'.</msg>
+<status status="PASS" endtime="20190118 14:49:55.016" starttime="20190118 14:49:50.998"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:55.017" starttime="20190118 14:49:49.495"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Guest User Proceeds to Checkout" library="CheckoutPage">
 <kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
@@ -931,18 +1392,30 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arguments>
 <arg>Guest_Proceed2Checkout.png</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:17.047" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Guest_Proceed2Checkout.png"&gt;&lt;img src="Guest_Proceed2Checkout.png" width="800px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" endtime="20190315 12:51:17.047" starttime="20190315 12:51:16.744"></status>
+=======
+<msg timestamp="20190118 14:49:55.339" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Guest_Proceed2Checkout.png"&gt;&lt;img src="Guest_Proceed2Checkout.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190118 14:49:55.339" starttime="20190118 14:49:55.018"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Click Element" library="ExtendedSelenium2Library">
 <doc>Clicks an element identified by ``locator``.</doc>
 <arguments>
 <arg>${btn_guestshopper_checkout}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:17.048" level="INFO">Clicking element 'id=guestShopperContinue'.</msg>
 <status status="PASS" endtime="20190315 12:51:17.690" starttime="20190315 12:51:17.047"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:17.690" starttime="20190315 12:51:16.744"></status>
+=======
+<msg timestamp="20190118 14:49:55.340" level="INFO">Clicking element 'id=guestShopperContinue'.</msg>
+<status status="PASS" endtime="20190118 14:49:56.055" starttime="20190118 14:49:55.339"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:56.055" starttime="20190118 14:49:55.017"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Guest User Types First Name" library="OrderShippingBillingViewPage">
 <kw name="Input Text" library="ExtendedSelenium2Library">
@@ -951,10 +1424,17 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${txt_firstname}</arg>
 <arg>${FIRST_NAME}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:17.691" level="INFO">Typing text 'KMART' into text field 'id=first-name'</msg>
 <status status="PASS" endtime="20190315 12:51:19.057" starttime="20190315 12:51:17.691"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:19.057" starttime="20190315 12:51:17.691"></status>
+=======
+<msg timestamp="20190118 14:49:56.056" level="INFO">Typing text 'KMART' into text field 'id=first-name'</msg>
+<status status="PASS" endtime="20190118 14:49:58.672" starttime="20190118 14:49:56.056"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:58.672" starttime="20190118 14:49:56.056"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Guest User Types Last Name" library="OrderShippingBillingViewPage">
 <kw name="Input Text" library="ExtendedSelenium2Library">
@@ -963,10 +1443,17 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${txt_lastname}</arg>
 <arg>${LAST_NAME}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:19.058" level="INFO">Typing text 'TESTER' into text field 'id=last-name'</msg>
 <status status="PASS" endtime="20190315 12:51:19.425" starttime="20190315 12:51:19.058"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:19.426" starttime="20190315 12:51:19.058"></status>
+=======
+<msg timestamp="20190118 14:49:58.674" level="INFO">Typing text 'TESTER' into text field 'id=last-name'</msg>
+<status status="PASS" endtime="20190118 14:49:59.444" starttime="20190118 14:49:58.673"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:59.444" starttime="20190118 14:49:58.673"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Guest User Input Email" library="OrderShippingBillingViewPage">
 <kw name="Input Text" library="ExtendedSelenium2Library">
@@ -975,10 +1462,17 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arg>${txt_email}</arg>
 <arg>${EMAIL}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:19.426" level="INFO">Typing text 'K.Tester@Kmart.com' into text field 'id=email'</msg>
 <status status="PASS" endtime="20190315 12:51:19.590" starttime="20190315 12:51:19.426"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:19.590" starttime="20190315 12:51:19.426"></status>
+=======
+<msg timestamp="20190118 14:49:59.445" level="INFO">Typing text 'K.Tester@Kmart.com' into text field 'id=email'</msg>
+<status status="PASS" endtime="20190118 14:49:59.698" starttime="20190118 14:49:59.445"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:49:59.698" starttime="20190118 14:49:59.445"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Guest User Verifies Order Summary" library="OrderShippingBillingViewPage">
 <kw name="Scroll Element Into View" library="ExtendedSelenium2Library">
@@ -986,27 +1480,45 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <arguments>
 <arg>${orderSummary}</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:19.591" level="INFO">Scrolling element 'xpath=//*[@class='title-area']' into view.</msg>
 <status status="PASS" endtime="20190315 12:51:19.608" starttime="20190315 12:51:19.591"></status>
+=======
+<msg timestamp="20190118 14:49:59.700" level="INFO">Scrolling element 'xpath=//*[@class='title-area']' into view.</msg>
+<status status="PASS" endtime="20190118 14:49:59.731" starttime="20190118 14:49:59.700"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </kw>
 <kw name="Capture Page Screenshot" library="ExtendedSelenium2Library">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
 <arguments>
 <arg>orderSummary.png</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:19.932" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="orderSummary.png"&gt;&lt;img src="orderSummary.png" width="800px"&gt;&lt;/a&gt;</msg>
 <status status="PASS" endtime="20190315 12:51:19.932" starttime="20190315 12:51:19.609"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:19.932" starttime="20190315 12:51:19.591"></status>
 </kw>
 <status status="PASS" endtime="20190315 12:51:19.932" critical="yes" starttime="20190315 12:50:58.099"></status>
+=======
+<msg timestamp="20190118 14:50:00.079" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="orderSummary.png"&gt;&lt;img src="orderSummary.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20190118 14:50:00.079" starttime="20190118 14:49:59.731"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:50:00.080" starttime="20190118 14:49:59.699"></status>
+</kw>
+<tags>
+<tag>prod</tag>
+</tags>
+<status status="PASS" endtime="20190118 14:50:00.080" critical="yes" starttime="20190118 14:49:27.108"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </test>
-<test id="s1-t2" name="[Test Teardown]">
+<test id="s1-t3" name="[Test Teardown]">
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>2s</arg>
 </arguments>
+<<<<<<< HEAD
 <msg timestamp="20190315 12:51:21.936" level="INFO">Slept 2 seconds</msg>
 <status status="PASS" endtime="20190315 12:51:21.936" starttime="20190315 12:51:19.935"></status>
 </kw>
@@ -1017,16 +1529,29 @@ If the boolean useTempDir is set to true, depending on the operating system of t
 <status status="PASS" endtime="20190315 12:51:24.096" critical="yes" starttime="20190315 12:51:19.935"></status>
 </test>
 <status status="PASS" endtime="20190315 12:51:24.099" starttime="20190315 12:50:57.668"></status>
+=======
+<msg timestamp="20190118 14:50:02.084" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20190118 14:50:02.084" starttime="20190118 14:50:00.084"></status>
+</kw>
+<kw name="Close All Browsers" library="ExtendedSelenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190118 14:50:04.378" starttime="20190118 14:50:02.085"></status>
+</kw>
+<status status="PASS" endtime="20190118 14:50:04.379" critical="yes" starttime="20190118 14:50:00.083"></status>
+</test>
+<status status="PASS" endtime="20190118 14:50:04.383" starttime="20190118 14:49:26.228"></status>
+>>>>>>> 0253d0076d916d07aa122eb12222a169e9d3fa4e
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="2">Critical Tests</stat>
-<stat fail="0" pass="2">All Tests</stat>
+<stat fail="0" pass="3">Critical Tests</stat>
+<stat fail="0" pass="3">All Tests</stat>
 </total>
 <tag>
+<stat fail="0" pass="1">prod</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="Shopping" pass="2">Shopping</stat>
+<stat fail="0" id="s1" name="Shopping" pass="3">Shopping</stat>
 </suite>
 </statistics>
 <errors>

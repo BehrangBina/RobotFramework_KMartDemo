@@ -9,8 +9,10 @@ Resource                  ../Action/CheckoutPage.robot
 Resource                  ../Action/OrderShippingBillingViewPage.robot
 
 *** Test Cases ***
+[Test Setup]  Convert Data From File 
+
 Search Product and Add to bag as a guest
-    Convert Data From File 
+    [Tags]		 prod    
     Log To Console  'Searching Product and Add to bag as a guest...'
     User Navigates To Homepage
     User Inputs Query into Search
@@ -27,4 +29,4 @@ Search Product and Add to bag as a guest
 
 [Test Teardown]
     sleep  2s
-    Close Browser
+    Close All Browsers 
